@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pwspray.trinitasrooster" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.pwspray.trinitasrooster.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Services.LoginService"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name="com.pwspray.trinitasrooster.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:noHistory="true"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+
+        <service
+            android:name=".Services.DownloadRoosterService"
+            android:exported="false" >
+        </service>
+
+        <receiver android:name=".Receivers.AlarmReceiver" android:enabled="true"></receiver>
+        <receiver android:name=".Receivers.BootReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".DetailsActivity"
+            android:label="@string/title_activity_details" >
+        </activity>
+
+    </application>
+
+</manifest>

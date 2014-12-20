@@ -1,0 +1,13 @@
+<resources>
+    <string name="title_activity_login">Log in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Gebruikersnaam</string>
+    <string name="prompt_password">Wachtwoord</string>
+    <string name="action_sign_in">Log in</string>
+    <string name="action_sign_in_short">Log in</string>
+
+    <string name="error_field_required">Dit moet ingevuld worden</string>
+    <string name="error_login_failed_wrong_credentials">Inloggegevens onjuist, probeer het opnieuw</string>
+    <string name="error_login_failed">Inloggen mislukt, probeer het opnieuw</string>
+</resources>

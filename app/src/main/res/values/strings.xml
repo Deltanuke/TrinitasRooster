@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Trinitas Rooster</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="rooster_detail_label_uur">Uur</string>
+    <string name="rooster_detail_label_leraar">Leraar</string>
+    <string name="rooster_detail_label_leraar_kort">Afkorting Leraar</string>
+    <string name="rooster_detail_label_lokaal">Lokaal</string>
+    <string name="rooster_detail_label_vak">Vak</string>
+    <string name="rooster_detail_label_klas">Klas</string>
+    <string name="rooster_detail_label_huiswerk">Huiswerk</string>
+
+    <string name="rooster_detail_toolbar_titel">Lesuur</string>
+    <string name="main_toolbar_titel">Trinitas rooster</string>
+
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="rooster_uit_title">Uit</string>
+    <string name="rooster_uit_details">Je hebt geen lessen meer vandaag</string>
+
+    <string-array name="week_dagen">
+        <item>maandag</item>
+        <item>dinsdag</item>
+        <item>woensdag</item>
+        <item>donderdag</item>
+        <item>vrijdag</item>
+        <item>zaterdag</item>
+        <item>zondag</item>
+    </string-array>
+
+    <string-array name="uren_rangteel">
+        <item>1ste</item>
+        <item>2de</item>
+        <item>3de</item>
+        <item>4de</item>
+        <item>5de</item>
+        <item>6de</item>
+        <item>7de</item>
+        <item>8ste</item>
+        <item>9de</item>
+    </string-array>
+
+    <string name="uur_uitval_titel">Uitval!</string>
+    <string name="lokaal_wijziging_titel">Lokaal wijziging!</string>
+    <string name="uur_uitval">Komende %1$s het %2$s uur valt %3$s uit!</string> <!-- Dag, uur_rangteel, vak -->
+    <string name="lokaal_wijziging">Komende %1$s het %2$s uur heeft u een lokaal wijziging naar %3$s.</string> <!-- Dag, uur_rangteel, nieuw Lokaal, -->
+
+</resources>

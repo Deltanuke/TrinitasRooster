@@ -1,0 +1,30 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+
+    <!-- Text view dimensions and sizes -->
+    <dimen name="text_view_text_size">16sp</dimen>
+    <dimen name="text_view_text_sub_header_size">16sp</dimen>
+    <dimen name="text_view_text_header_size">24sp</dimen>
+    <dimen name="text_view_header_height">72dp</dimen>
+    <dimen name="text_view_padding_top">16dp</dimen>
+    <dimen name="text_view_padding_bottom">10dp</dimen>
+    <dimen name="text_view_padding_left">16dp</dimen>
+    <dimen name="text_view_padding_right">16dp</dimen>
+    <dimen name="text_view_height">48dp</dimen>
+
+    <!-- List view dimensions and sizes -->
+    <dimen name="list_view_text_size">16sp</dimen>
+    <dimen name="list_view_height">56dp</dimen>
+    <dimen name="list_view_padding_left">16dp</dimen>
+    <dimen name="list_view_padding_right">16dp</dimen>
+    <dimen name="list_view_padding_top">9dp</dimen>
+    <dimen name="list_view_padding_bottom">9dp</dimen>
+
+    <!-- Avatar dimensions and sizes -->
+    <dimen name="avatar_radius">40dp</dimen>
+    <dimen name="avatar_text_size">28sp</dimen>
+    <dimen name="avatar_padding_top">8dp</dimen>
+    <dimen name="avatar_padding_bottom">8dp</dimen>
+</resources>

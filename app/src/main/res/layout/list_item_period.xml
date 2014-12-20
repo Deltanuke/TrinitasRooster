@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:id="@+id/list_item_period_linear"
+    android:layout_height="@dimen/list_view_height"
+    android:paddingStart="@dimen/list_view_padding_left"
+    android:paddingEnd="@dimen/list_view_padding_right"
+    android:paddingLeft="@dimen/list_view_padding_left"
+    android:paddingRight="@dimen/list_view_padding_right"
+    android:paddingTop="@dimen/avatar_padding_top"
+    android:paddingBottom="@dimen/avatar_padding_bottom"
+    >
+
+    <FrameLayout
+        android:layout_width="@dimen/avatar_radius"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/period_hour"
+            android:layout_width="@dimen/avatar_radius"
+            android:layout_height="@dimen/avatar_radius"
+            android:background="@drawable/hour_bg"
+            android:text="9"
+            android:textSize="@dimen/avatar_text_size"
+            android:gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/list_view_padding_top"
+        android:paddingBottom="@dimen/list_view_padding_bottom"
+        android:paddingStart="@dimen/list_view_padding_left"
+        android:paddingEnd="0dp"
+        android:paddingLeft="@dimen/list_view_padding_left"
+        android:paddingRight="0dp"
+        >
+
+        <TextView
+            android:id="@+id/period_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class subject"
+            android:textSize="@dimen/list_view_text_size"/>
+
+        <TextView
+            android:id="@+id/period_homework"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/period_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:textSize="@dimen/list_view_text_size"
+            />
+
+        <TextView
+            android:id="@+id/period_teacher_short"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Short - Full name"
+            android:textSize="@dimen/list_view_text_size"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:textSize="@dimen/list_view_text_size"
+            />
+
+        <TextView
+            android:id="@+id/period_classroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lesinfo"
+            android:textSize="@dimen/list_view_text_size"
+            />
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/period_homework_image"
+        android:layout_width="@dimen/avatar_radius"
+        android:layout_height="@dimen/avatar_radius"
+        android:visibility="invisible"
+        android:src="@drawable/ic_homework_notificatie"/>
+</LinearLayout>

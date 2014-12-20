@@ -1,0 +1,245 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/windowBackground"
+    android:foreground="?android:windowContentOverlay"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:src="@drawable/foto1"
+        android:adjustViewBounds="false"
+        android:scaleType="centerCrop"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?android:windowContentOverlay"
+        android:elevation="2dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="0dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"/>
+
+            <TextView
+                android:id="@+id/titelTextView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_view_header_height"
+                android:background="@drawable/my_header"
+                android:textSize="@dimen/text_view_text_header_size"
+                android:textColor="@color/textColorPrimary"
+                android:paddingTop="@dimen/text_view_padding_top"
+                android:paddingBottom="@dimen/text_view_padding_bottom"
+                android:paddingStart="@dimen/text_view_padding_left"
+                android:paddingEnd="@dimen/text_view_padding_right"
+                android:paddingLeft="@dimen/text_view_padding_left"
+                android:paddingRight="@dimen/text_view_padding_right"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="#FFFFFF">
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/uurLabelTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view_height"
+                        android:text="@string/rooster_detail_label_uur"
+                        android:textSize="@dimen/text_view_text_size"
+                        android:paddingTop="@dimen/text_view_padding_top"
+                        android:paddingBottom="@dimen/text_view_padding_bottom"
+                        android:paddingStart="@dimen/text_view_padding_left"
+                        android:paddingEnd="@dimen/text_view_padding_right"
+                        android:paddingLeft="@dimen/text_view_padding_left"
+                        android:paddingRight="@dimen/text_view_padding_right"
+                        />
+
+                    <TextView
+                        android:id="@+id/vakLabelTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view_height"
+                        android:text="@string/rooster_detail_label_vak"
+                        android:textSize="@dimen/text_view_text_size"
+                        android:paddingTop="@dimen/text_view_padding_top"
+                        android:paddingBottom="@dimen/text_view_padding_bottom"
+                        android:paddingStart="@dimen/text_view_padding_left"
+                        android:paddingEnd="@dimen/text_view_padding_right"
+                        android:paddingLeft="@dimen/text_view_padding_left"
+                        android:paddingRight="@dimen/text_view_padding_right"
+                        />
+
+                    <TextView
+                        android:id="@+id/lokaalLabelTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view_height"
+                        android:text="@string/rooster_detail_label_lokaal"
+                        android:textSize="@dimen/text_view_text_size"
+                        android:paddingTop="@dimen/text_view_padding_top"
+                        android:paddingBottom="@dimen/text_view_padding_bottom"
+                        android:paddingStart="@dimen/text_view_padding_left"
+                        android:paddingEnd="@dimen/text_view_padding_right"
+                        android:paddingLeft="@dimen/text_view_padding_left"
+                        android:paddingRight="@dimen/text_view_padding_right"
+                        />
+
+                    <TextView
+                        android:id="@+id/leraarLabelTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view_height"
+                        android:text="@string/rooster_detail_label_leraar"
+                        android:textSize="@dimen/text_view_text_size"
+                        android:paddingTop="@dimen/text_view_padding_top"
+                        android:paddingBottom="@dimen/text_view_padding_bottom"
+                        android:paddingStart="@dimen/text_view_padding_left"
+                        android:paddingEnd="@dimen/text_view_padding_right"
+                        android:paddingLeft="@dimen/text_view_padding_left"
+                        android:paddingRight="@dimen/text_view_padding_right"
+                        />
+
+                    <TextView
+                        android:id="@+id/leraarKortLabelTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view_height"
+                        android:text="@string/rooster_detail_label_leraar_kort"
+                        android:textSize="@dimen/text_view_text_size"
+                        android:paddingTop="@dimen/text_view_padding_top"
+                        android:paddingBottom="@dimen/text_view_padding_bottom"
+                        android:paddingStart="@dimen/text_view_padding_left"
+                        android:paddingEnd="@dimen/text_view_padding_right"
+                        android:paddingLeft="@dimen/text_view_padding_left"
+                        android:paddingRight="@dimen/text_view_padding_right"
+                        />
+
+                    <TextView
+                        android:id="@+id/huiswerkLabelTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view_height"
+                        android:text="@string/rooster_detail_label_huiswerk"
+                        android:textSize="@dimen/text_view_text_size"
+                        android:paddingTop="@dimen/text_view_padding_top"
+                        android:paddingBottom="@dimen/text_view_padding_bottom"
+                        android:paddingStart="@dimen/text_view_padding_left"
+                        android:paddingEnd="@dimen/text_view_padding_right"
+                        android:paddingLeft="@dimen/text_view_padding_left"
+                        android:paddingRight="@dimen/text_view_padding_right"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/uurTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view_height"
+                        android:textSize="@dimen/text_view_text_size"
+                        android:paddingTop="@dimen/text_view_padding_top"
+                        android:paddingBottom="@dimen/text_view_padding_bottom"
+                        android:paddingStart="@dimen/text_view_padding_left"
+                        android:paddingEnd="@dimen/text_view_padding_right"
+                        android:paddingLeft="@dimen/text_view_padding_left"
+                        android:paddingRight="@dimen/text_view_padding_right"
+                        />
+
+                    <TextView
+                        android:id="@+id/vakTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view_height"
+                        android:textSize="@dimen/text_view_text_size"
+                        android:paddingTop="@dimen/text_view_padding_top"
+                        android:paddingBottom="@dimen/text_view_padding_bottom"
+                        android:paddingStart="@dimen/text_view_padding_left"
+                        android:paddingEnd="@dimen/text_view_padding_right"
+                        android:paddingLeft="@dimen/text_view_padding_left"
+                        android:paddingRight="@dimen/text_view_padding_right"
+                        />
+
+                    <TextView
+                        android:id="@+id/lokaalTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view_height"
+                        android:textSize="@dimen/text_view_text_size"
+                        android:paddingTop="@dimen/text_view_padding_top"
+                        android:paddingBottom="@dimen/text_view_padding_bottom"
+                        android:paddingStart="@dimen/text_view_padding_left"
+                        android:paddingEnd="@dimen/text_view_padding_right"
+                        android:paddingLeft="@dimen/text_view_padding_left"
+                        android:paddingRight="@dimen/text_view_padding_right"
+                        />
+
+                    <TextView
+                        android:id="@+id/leraarTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view_height"
+                        android:textSize="@dimen/text_view_text_size"
+                        android:paddingTop="@dimen/text_view_padding_top"
+                        android:paddingBottom="@dimen/text_view_padding_bottom"
+                        android:paddingStart="@dimen/text_view_padding_left"
+                        android:paddingEnd="@dimen/text_view_padding_right"
+                        android:paddingLeft="@dimen/text_view_padding_left"
+                        android:paddingRight="@dimen/text_view_padding_right"
+                        />
+
+                    <TextView
+                        android:id="@+id/leraarKortTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view_height"
+                        android:textSize="@dimen/text_view_text_size"
+                        android:paddingTop="@dimen/text_view_padding_top"
+                        android:paddingBottom="@dimen/text_view_padding_bottom"
+                        android:paddingStart="@dimen/text_view_padding_left"
+                        android:paddingEnd="@dimen/text_view_padding_right"
+                        android:paddingLeft="@dimen/text_view_padding_left"
+                        android:paddingRight="@dimen/text_view_padding_right"
+                        />
+
+                    <TextView
+                        android:id="@+id/huiswerkTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_view_text_size"
+                        android:paddingTop="@dimen/text_view_padding_top"
+                        android:paddingBottom="@dimen/text_view_padding_bottom"
+                        android:paddingStart="@dimen/text_view_padding_left"
+                        android:paddingEnd="@dimen/text_view_padding_right"
+                        android:paddingLeft="@dimen/text_view_padding_left"
+                        android:paddingRight="@dimen/text_view_padding_right"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="42dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
